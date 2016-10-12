@@ -1,5 +1,14 @@
 .title-txt {
 	font-family: 'Lobster', cursive;
-	font-size:200px;
+	font-size:100;
 	text-align: center;
+	color: #fff;
+}
+body {
+	background-color: #4B116F;
+}
+
+#textbox {
+	height: 200px;
+	overflow-y: scroll;
 }
