@@ -1,14 +1,21 @@
 .title-txt {
-	font-family: 'Lobster', cursive;
+	font-family: 'Arial', cursive;
 	font-size:100;
 	text-align: center;
 	color: #fff;
 }
 body {
-	background-color: #4B116F;
+	background-color: #702b9b;
 }
 
 #textbox {
 	height: 200px;
 	overflow-y: scroll;
+}
+.uni-head {
+	background-color: #4f1e6d;
+}
+.logo {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
