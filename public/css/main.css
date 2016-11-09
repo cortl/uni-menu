@@ -14,8 +14,13 @@ body {
 }
 .uni-head {
 	background-color: #4f1e6d;
+	margin-bottom: 0px;
 }
 .logo {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+#generate_btn {
+	margin-right: 10px;
+}
+.btn
