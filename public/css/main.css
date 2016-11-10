@@ -23,4 +23,9 @@ body {
 #generate_btn {
 	margin-right: 10px;
 }
-.btn
+#sticky {
+	position: fixed;
+	clear: both;
+	bottom: 0px;
+	margin-left: 75%;
+}
