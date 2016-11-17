@@ -1,9 +1,44 @@
 <div class="container">
 <!-- Modal Structure -->
-<div id="nutrition" class="modal">
+<div id="nutrition" class="modal" style="max-height: 85%">
 	<div class="modal-content">
 		<h4>Nutrition Facts - <span id="food_item">N/A</span></h4>
-		<p>Stuff here</p>
+		<div class="row">
+			<div class="col s3">
+				<h6>Serving Size: <span id="servingsize">9000+</span></h6>
+				<h6><b>Calories:</b> <span id="calories">9000+</span></h6>
+				<h6>Calories From Fat: <span id="fromfat">Too Many</span></h6>
+			</div>
+			<div class="col s9">
+				<table class="bordered">
+					<thead>
+						<tr>
+							<th data-field="id">Amount/Serving</th>
+							<th data-field="id">Amount/Serving</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><b>Total Fat</b> <span id="fat">0</span></td>
+							<td><b>Total Carbs</b> <span id="carbs">0</span></td>
+						</tr>
+						<tr>
+							<td>Sat. Fat <span id="satfat">0</span></td>
+							<td>Dietary Fiber <span id="fiber">0</span></td>
+						</tr>
+						<tr>
+							<td>Trans Fat <span id="transfat">0</span></td>
+							<td>Sugars <span id="sugars">0</span></td>
+						</tr>
+						<tr>
+							<td><b>Sodium</b> <span id="sodium">0</span></td>
+							<td><b>Protein</b> <span id="protein">0</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+			<p>Ingredients: <span id="ingredients">nothing</span></p>
 	</div>
 	<div class="modal-footer">
 		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Add to Menu</a>
