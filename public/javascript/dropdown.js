@@ -22,6 +22,7 @@ jQuery(document).ready(function($){
 			$(".milk").hide();
 			$(".eggs").hide();
 			$(".seafood").hide();
+			$(".meat").hide();
 		} else {
 			// If milk, eggs, or seafood aren't then reshow.
 			if (!$("input#milk")[0].checked){
