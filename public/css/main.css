@@ -32,3 +32,13 @@ body {
 .nav-text {
 	margin-top: 25px;
 }
+.dropdown-ul{
+	margin: 20px;
+	width: 200px !important;
+}
+.dropdown-ul li{
+	padding-left: 10px;
+}
+.dropdown-ul h6 {
+	margin-left: 10px;
+}
