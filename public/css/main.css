@@ -29,11 +29,6 @@ body {
 	bottom: 0px;
 	margin-left: 75%;
 }
-#date_thing {
-	margin-top: 25px;
-	font-size: 1.28rem;
-	border-bottom: 0px;
-}
-#location_header {
+.nav-text {
 	margin-top: 25px;
 }

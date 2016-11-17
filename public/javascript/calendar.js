@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		hiddenSuffix: '_submit',
 		hiddenName: undefined,
 		onClose: function() {
-			$("#date_thing").val(picker.get())
+			$("#date_thing").text(picker.get())
 		},
 	  });
 	var $input = $('.datepicker').pickadate();
