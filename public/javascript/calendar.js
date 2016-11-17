@@ -1,4 +1,5 @@
-jQuery(document).ready(function($){	
+jQuery(document).ready(function($){
+	$("#date_thing").text(getDate());
 	  $('.datepicker').pickadate({
 	    // selectMonths: true, // Creates a dropdown to control month
 	    // selectYears: 15, // Creates a dropdown of 15 years to control year
@@ -24,3 +25,17 @@ jQuery(document).ready(function($){
 	    var who = 1
 	});
 });
+function getDate(){
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth();
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+    } 
+
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    var dayString = months[mm]+" "+dd+", "+yyyy;
+    return dayString
+}
