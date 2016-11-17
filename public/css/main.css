@@ -42,3 +42,6 @@ body {
 .dropdown-ul h6 {
 	margin-left: 10px;
 }
+.food_lnk {
+	display: block;
+}
