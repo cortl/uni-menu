@@ -7,11 +7,16 @@
 	<% include ../../partials/uni-head.ejs %>
 	<% include ../../partials/nutrition-facts.ejs %>
 	<% include ../../partials/filter-dropdown.ejs %>
-	<div class="row">
+	<div id="nav-block" class="row">
 		<% include ../../partials/navigation.ejs %>
 	</div>
 	<div class="row">
-		<% include ../../partials/menu.ejs %>
+		<div id="generate-block" style="display:none">
+			<% include ../../partials/generate.ejs %>
+		</div>
+		<div id="menu-block">
+			<% include ../../partials/menu.ejs %>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,0 +1,12 @@
+jQuery(document).ready(function($){
+	$("#generate_btn").click(function(){
+		$("#generate-block").show();
+		$("#menu-block").hide();
+		$("#nav-block").hide();
+	});
+	$("#generate_back_btn").click(function(){
+		$("#generate-block").hide();
+		$("#menu-block").show();
+		$("#nav-block").show();
+	})
+})
