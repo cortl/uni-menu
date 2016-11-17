@@ -9,8 +9,12 @@ jQuery(document).ready(function($){
 		hiddenSuffix: '_submit',
 		hiddenName: undefined,
 		onClose: function() {
-			$("#date_thing").text(picker.get())
+			var date = picker.get()
+			if (date!=""){
+				$("#date_thing").text(picker.get())
+			}
 		},
+		clear: '',
 	  });
 	var $input = $('.datepicker').pickadate();
 	var picker = $input.data('pickadate');
