@@ -5,7 +5,10 @@
 </head>
 <body>
 	<% include ../partials/uni-head.ejs %>
-	<div class="row">
+	<div id="search-block" style="display: none">
+		<% include ../partials/search.ejs %>
+	</div>
+	<div id="location-block" class="row">
 		<% include ../partials/location-selection.ejs %>
 	</div>
 </body>
