@@ -16,4 +16,9 @@ jQuery(document).ready(function($){
 		},1000);
 		objDiv.scrollTop = objDiv.scrollHeight;
 	});
+	$('#chat').keypress(function(e){
+		if(e.which == 13){//Enter key pressed
+			$('#send').click();//Trigger search button click event
+		}
+	});
 });

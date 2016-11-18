@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 		$("#nav-block").hide();
 		$("#location-block").hide();
 		$("#search-block").show();
-		$("#ball-block").fadeOut();
+		$("#ball-block").hide();
 		var term = $("#search-box").val();
 		if (term=="8ball"){
 			$("#ball-block").fadeIn();
@@ -19,5 +19,10 @@ jQuery(document).ready(function($){
 		$("#search-block").hide();
 		$("#search-box").val("");
 		$("#ball-block").hide();
+	});
+	$("#search-box").keypress(function(e){
+		if(e.which == 13){//Enter key pressed
+			$('#search').click();//Trigger search button click event
+		}
 	});
 });
