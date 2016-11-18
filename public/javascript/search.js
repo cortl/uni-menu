@@ -4,7 +4,11 @@ jQuery(document).ready(function($){
 		$("#nav-block").hide();
 		$("#location-block").hide();
 		$("#search-block").show();
+		$("#ball-block").fadeOut();
 		var term = $("#search-box").val();
+		if (term=="8ball"){
+			$("#ball-block").fadeIn();
+		}
 		$("#search-box").val("");
 		$("#search-term").text(term);
 	});
@@ -14,5 +18,6 @@ jQuery(document).ready(function($){
 		$("#location-block").show();
 		$("#search-block").hide();
 		$("#search-box").val("");
+		$("#ball-block").hide();
 	});
 });
