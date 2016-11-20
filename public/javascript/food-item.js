@@ -30,4 +30,7 @@ jQuery(document).ready(function($){
 		$("#protein").text(protein);
 		$("#ingredients").text(ingredients);
 	});
+	$("#addToMenu").click(function(e) {
+		addFood($("#food_item").text())
+	})
 });
