@@ -1,8 +1,8 @@
 function addFood(foodItem) {
 	var calories = foods[foodItem]["calories"]
 	var servingSize = foods[foodItem]["serving"]
-	var rapGame = "<tr><td><span class=\"meal-item-name\">"+foodItem+"</span></td><td><span class=\"meal-item-servings\">"+servingSize+"</span></td><td><span class=\"meal-item-calories\">"+calories+"</span></td><td><a href=\"#\" class=\"remove delete-food\"><i class=\"small red-text material-icons\">delete</i></a></td></tr>"
-	$("#mmeal-bod").append(rapGame)
+	var newRow = "<tr><td><span class=\"meal-item-name\">"+foodItem+"</span></td><td><span class=\"meal-item-servings\">"+servingSize+"</span></td><td><span class=\"meal-item-calories\">"+calories+"</span></td><td><a href=\"#\" class=\"remove delete-food\"><i style=\"font-size: 1.5rem\" class=\"red-text material-icons\">delete</i></a></td></tr>"
+	$("#mmeal-bod").append(newRow)
 	$("#total-cal").text(getTotalCalories())
 	registerDelete()
 
