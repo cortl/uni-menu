@@ -35,9 +35,7 @@ jQuery(document).ready(function($){
 		var cell23 = row.insertCell(3);
 		var cell24 = row.insertCell(4);
 
-		cell00.insert("swag")*/
-
-
-
-	}
+		cell00.insert("swag")
+	} */
+	
 })

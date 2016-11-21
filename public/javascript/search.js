@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 			$("#not-found").hide();
 		}else {
 			$("#search-results").hide();
-			$("#search-term").text("Results not found");
+			$("#search-term").text("Results not found for " + term);
 			
 		}
 		$("#search-box").val("");
@@ -25,9 +25,12 @@ jQuery(document).ready(function($){
 		$("#menu-block").show();
 		$("#nav-block").show();
 		$("#location-block").show();
-		$("#search-block").hide();
+		
 		$("#search-box").val("");
+
+		$("#search-block").hide();
 		$("#ball-block").hide();
+		$("#generate-block").hide();
 	});
 	$("#search-box").keypress(function(e){
 		if(e.which == 13){//Enter key pressed
