@@ -1,47 +1,48 @@
 <div class="row">
 	<button id="search_back_btn" class="waves-effect waves-dark btn-flat white-text left">Back</button>
-	<h4 class="white-text">"<span id="search-term">nothing</span>"</h4>
+	<h4 class="white-text"><span id="search-context"></span> "<span id="search-term"></span>"</h4>
 </div>
 <div id="ball-block">
-	<div class="col s8">
-	<% include 8ball.ejs %>
+	<div class="col s10 offset-s1">
+		<% include 8ball.ejs %>
 	</div>
 </div>
-<div style ="display: none"  id="not-found">
+<div style="display: none" id="not-found">
 	<h6 class="white-text"> Results not found </h6>
 </div>
-<div style ="display: none" id ="search-results" class="white-text col s10 offset-s1">
-	<table class = "bordered highlight">
-
+<div style="display: none" id="search-results">
+<div class="card col s10 offset-s1">
+<div class="card-content" id="breakfast_card">
+	<table class="bordered">
 		<thead>
-          <tr>
-              <th data-field="name">Food Item</th>
-              <th data-field="Location">Location</th>
-              <th data-field="Date">Date</th>
-              <th data-field="Meal">Meal</th>
-
-          </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-            <td><span class ="search-name"> </span></td>
-            <td>Piazza</td>
-            <td>Mon, Nov 28</td>
-            <td>Lunch</td>
-          </tr>
-          <tr>
-            <td><span class ="search-name"> </span> </td>
-            <td>Rialto</td>
-            <td>Thu, Dec 1</td>
-            <td>Dinner</td>
-          </tr>
-          <tr>
-            <td><span class ="search-name"> </span> </td>
-            <td>Piazza</td>
-            <td>Fri, Dec 2</td>
-            <td>Late Dinner</td>
-          </tr>
-        </tbody>
-      </table>
+			<tr>
+				<th data-field="name">Food Item</th>
+				<th data-field="Location">Location</th>
+				<th data-field="Date">Date</th>
+				<th data-field="Meal">Meal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="#nutrition" data-toggle="nutrition" data-target="#nutrition" class="food_lnk modal-trigger search"><span class="food_lnk search-name"> </span></a></td>
+				<td>Piazza</td>
+				<td>Mon, Nov 28</td>
+				<td>Lunch</td>
+			</tr>
+			<tr>
+				<td><a href="#nutrition" data-toggle="nutrition" data-target="#nutrition" class="food_lnk modal-trigger search"><span class="food_lnk search-name"> </span></a></td>
+				<td>Rialto</td>
+				<td>Thu, Dec 1</td>
+				<td>Dinner</td>
+			</tr>
+			<tr>
+				<td><a href="#nutrition" data-toggle="nutrition" data-target="#nutrition" class="food_lnk modal-trigger search"><span class="food_lnk search-name"> </span></a></td>
+				<td>Piazza</td>
+				<td>Fri, Dec 2</td>
+				<td>Late Dinner</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>
 </div>
