@@ -8,9 +8,18 @@ jQuery(document).ready(function($){
 		var term = $("#search-box").val();
 		if (term=="8ball"){
 			$("#ball-block").fadeIn();
+		}if (term != "" && term in foods){
+			$(".search-name").text(term);
+			$("#search-results").show();
+			$("#search-term").text("Showing relsults for " & term);
+			$("#not-found").hide();
+		}else {
+			$("#search-results").hide();
+			$("#search-term").text("Results not found");
+			
 		}
 		$("#search-box").val("");
-		$("#search-term").text(term);
+		
 	});
 	$("#search_back_btn").click(function(){
 		$("#menu-block").show();
