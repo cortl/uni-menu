@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 		}if (term != "" && term in foods){
 			$(".search-name").text(term);
 			$("#search-results").show();
-			$("#search-term").text("Showing relsults for " & term);
+			$("#search-term").text("Showing results for " + term);
 			$("#not-found").hide();
 		}else {
 			$("#search-results").hide();
