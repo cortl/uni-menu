@@ -1,8 +1,8 @@
 <div class="col s8 center offset-s2">
 		<div class="card-content">
 
-			<div class="row" style="text-align:center; padding-right: 200px; padding-left: 200px;">
-					 <div class="col s12">
+			<div class="col s12" style="text-align:center;">
+					 <div class="col s6 align-right">
 						 <div class="card valign" style="background-color:#ffffff;">
 							 <div class="card-content white-text">
 								 <button id="generate_back_btn" class="waves-effect waves-dark btn-flat black-text left grey lighten-2">Back</button>
@@ -11,29 +11,29 @@
 
 										 <div class="row">
 				    			 			<div class="input-field col s3">
-				      						<input id="first_name2" type="text" class="black-text">
-				      						<label style="text-align:left;" class="active black-text" for="first_name2">Calories</label>
+				      						<input id="user_calories" type="text" class="black-text">
+				      						<label style="text-align:left;" class="active grey-text" for="user_calories">Calories</label>
 				    						</div>
 										 </div>
 
 										<div class="row">
 											 <div class="input-field col s3">
-												 <input id="first_name2" type="text" class="black-text">
-												 <label style="text-align:left;"class="active black-text" for="first_name2">Protein(g)</label>
+												 <input id="user_protein" type="text" class="black-text">
+												 <label style="text-align:left;"class="active grey-text" for="user_protein">Protein(g)</label>
 											  </div>
 									  </div>
 
 									  <div class="row">
 											<div class="input-field col s3">
-												<input id="first_name2" type="text" class="black-text">
-											  <label style="text-align:left;" class="active black-text" for="first_name2">Fat(g)</label>
+												<input id="user_fat" type="text" class="black-text">
+											  <label style="text-align:left;" class="active grey-text" for="user_fat">Fat(g)</label>
 											</div>
 									  </div>
 
 								   <div class="row">
 							   		<div class="input-field col s3">
-						   				 <input id="first_name2" type="text" class="black-text">
-											 <label style="text-align:left;" class="active black-text" for="first_name2">Carbs(g)</label>
+						   				 <input id="user_carbs" type="text" class="black-text">
+											 <label style="text-align:left;" class="active grey-text" for="user_carbs">Carbs(g)</label>
 									  </div>
 								   </div>
 
@@ -45,13 +45,37 @@
 		  			</div>
 					</div>
 
-						<div class="card-action">
+						<div class="card-action" onclick = "populateMeal()">
 							 <a class="waves-effect waves-dark btn-large white black-text">Generate</a>
 			   		 </div>
+				 </div>
+
+				 <div class="col s6 right-align length:500px; width:200px">
+					 <div class="card valign" style="background-color:#ffffff;">
+						 <div class="card-content">
+							 <span class="card-title black-text center">Meal</span>
+
+							 <table id = "mealTable" class = "bordered">
+						 		<thead>
+						      <tr>
+						        <th data-field="name">Food Item</th>
+										<th data-field="calories">Calories</th>
+										<th data-field="protein">Protein</th>
+										<th data-field="fat">Fat</th>
+										<th data-field="carbs">Carbs</th>
+
+						      </tr>
+									<tbody>
+										<td></td>
+									</tbody>
+						    </thead>
+						 </div>
+
+					 </div>
 				 </div>
 		 </div>
 
 
 
-		</div>
 	</div>
+</div>
