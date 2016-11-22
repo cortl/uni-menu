@@ -27,6 +27,16 @@ jQuery(document).ready(function($){
 			addFood(generatedFood[i])
 		}
 	});
+	function getValidFoodList(calorieLimit) {
+		var currentCals = 0;
+		var foodList = []
+		while (currentCals < calorieLimit){
+			var foodItem = getRandomArrayElement(totalFoodList);
+			foodList.push(foodItem)
+			currentCals += parseInt(foods[foodItem].calories)
+		}
+		return foodList;
+	}
 	function generateMealFooter(foodTableList) {
 		var mealTableFooter = ("#generate-table-foot");
 		var calories = 0
@@ -45,13 +55,15 @@ jQuery(document).ready(function($){
 		$("#generate_total_carbs").text(Math.round(10*carbs)/10);
 	}
 	function populateMeal() {
+		var calLimit = parseInt($("input#user_calories").val());
+		if (calLimit==0 || isNaN(calLimit)) {
+			Materialize.toast('Please enter in a calorie limit', 4000)
+			return;
+		}
 		var mealTable = $("#generate-table");
 		mealTable.empty();
 		// get three things from the food list
-		var foodList = []
-		foodList.push(getRandomArrayElement(totalFoodList));
-		foodList.push(getRandomArrayElement(totalFoodList));
-		foodList.push(getRandomArrayElement(totalFoodList));
+		var foodList = getValidFoodList(calLimit)
 
 		for (var i = 0; i < foodList.length; i++) {
 			var calories = foods[foodList[i]].calories
