@@ -27,13 +27,36 @@ jQuery(document).ready(function($){
 			addFood(generatedFood[i])
 		}
 	});
-	function getValidFoodList(calorieLimit) {
+	function getValidFoodList(calorieLimit, proteinLimit, fatLimit, carbLimit) {
 		var currentCals = 0;
+		var currentProtein = 0;
+		var currentFat =0;
+		var currentCarbs = 0;
 		var foodList = []
-		while (currentCals < calorieLimit){
+
+		// Cheap way of doing this, pretty much set these to unreachable heights if they didn't set a max
+		if (isNaN(proteinLimit)){
+			proteinLimit = 9007199254740000;
+		}
+		if (isNaN(fatLimit)){
+			fatLimit = 9007199254740000;
+		}
+		if (isNaN(carbLimit)){
+			carbLimit = 9007199254740000;
+		}
+		if (calorieLimit >= 10000){
+			// No.
+			Materialize.toast('Please enter in a calorie limit less than 10,000', 4000)
+			return;
+		}
+		while ((currentCals < calorieLimit) && (currentProtein < proteinLimit) && (currentFat < fatLimit) && (currentCarbs < carbLimit)){
 			var foodItem = getRandomArrayElement(totalFoodList);
 			foodList.push(foodItem)
 			currentCals += parseInt(foods[foodItem].calories)
+			currentProtein += parseInt(foods[foodItem].protein)
+			currentFat += parseInt(foods[foodItem].fat)
+			currentCarbs += parseInt(foods[foodItem].carbs)
+
 		}
 		return foodList;
 	}
@@ -56,6 +79,10 @@ jQuery(document).ready(function($){
 	}
 	function populateMeal() {
 		var calLimit = parseInt($("input#user_calories").val());
+		var proteinLimit = parseInt($("input#user_protein").val());
+		var carbLimit = parseInt($("input#user_carbs").val());
+		var fatLimit = parseInt($("input#user_fat").val());
+
 		if (calLimit==0 || isNaN(calLimit)) {
 			Materialize.toast('Please enter in a calorie limit', 4000)
 			return;
@@ -63,7 +90,7 @@ jQuery(document).ready(function($){
 		var mealTable = $("#generate-table");
 		mealTable.empty();
 		// get three things from the food list
-		var foodList = getValidFoodList(calLimit)
+		var foodList = getValidFoodList(calLimit, proteinLimit, fatLimit, carbLimit)
 
 		for (var i = 0; i < foodList.length; i++) {
 			var calories = foods[foodList[i]].calories
