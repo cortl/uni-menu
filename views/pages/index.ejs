@@ -5,8 +5,11 @@
 </head>
 <body>
 	<% include ../partials/uni-head.ejs %>
+	<% include ../partials/nutrition-facts.ejs %>
 	<div id="search-block" style="display: none">
-		<% include ../partials/search.ejs %>
+		<div class="row">
+			<% include ../partials/search.ejs %>
+		</div>
 	</div>
 	<div id="location-block" class="row">
 		<% include ../partials/location-selection.ejs %>
