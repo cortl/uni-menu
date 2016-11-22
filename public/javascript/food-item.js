@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){	
 	$(".modal-trigger").leanModal()
-	$(".food_lnk").click(function(e){
+	$("body").on("click","a.food_lnk", function(e){
 		if ($(this).hasClass("search-name") || $(this).hasClass("search")){
 			$("#addToMenu").hide();
 		} else {
