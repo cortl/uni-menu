@@ -1,48 +1,64 @@
-<div class="col s8 center offset-s2">
+<button id="generate_back_btn" class="waves-effect waves-dark btn-flat white-text left">Back</button>
+<h4 class="white-text">Generate a Meal</h4>
+<div class="col s10 offset-s1">
     <div class="card-content">
         <div class="col s6">
-            <div class="card">
+            <div class="card" style="padding-bottom: 40px">
                 <div class="card-content white-text">
-                    <button id="generate_back_btn" class="waves-effect waves-dark btn-flat black-text left grey lighten-2">Back</button>
-                    <span class="card-title black-text">Generate a Meal</span>
+                    <span class="card-title black-text">Enter Nutritional Limits</span>
                     <div class="row">
-                        <div class="input-field" <input id="user_calories" type="text" class="black-text">
-                            <input id="user_calories" type="number" class="black-text">
-                            <label class="active grey-text" for="user_calories">Calories</label>
+                        <div class="col s12 black-text">
+                            <label>Choose a meal</label>
+                            <select id="generate_meal_select">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Breakfast</option>
+                                <option value="2">Lunch</option>
+                                <option value="3">Dinner</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field">
-                            <input id="user_protein" type="number" class="black-text">
-                            <label class="active grey-text" for="user_protein">Protein(g)</label>
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input id="user_calories" type="number" class="black-text">
+                                <label class="active" for="user_calories">Calories Limit</label>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field ">
-                            <input id="user_fat" type="number" class="black-text">
-                            <label class="active grey-text" for="user_fat">Fat(g)</label>
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input id="user_protein" type="number" class="black-text">
+                                <label class="active" for="user_protein">Protein(g) Limit</label>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field ">
-                            <input id="user_carbs" type="number" class="black-text">
-                            <label class="active grey-text" for="user_carbs">Carbs(g)</label>
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <input id="user_fat" type="number" class="black-text">
+                                <label class="active" for="user_fat">Fat(g) Limit</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="row align-right">
-                        <div class="col s3">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <input id="user_carbs" type="number" class="black-text">
+                                <label class="active" for="user_carbs">Carbs(g) Limit</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-action">
-                <a class="aves-effect waves-dark btn-large white black-text" id="generate_meal_btn">Generate</a>
+                <div class="card-action">
+                    <a class="waves-effect waves-dark btn-flat black-text left grey lighten-2 right" id="generate_meal_btn">Generate</a>
+                </div>
             </div>
         </div>
         <div class="col s6">
             <div class="card" style="padding-bottom: 40px;">
                 <div class="card-content">
-                    <span class="card-title black-text">Meal</span>
+                    <span class="card-title black-text">Generated Meal</span>
                     <table id="mealTable" class="bordered">
                         <thead>
                             <tr>
@@ -57,7 +73,7 @@
                         </tbody>
                         <tfoot id="generate-table-foot">
                             <tr>
-                                <td>Totals:</td>
+                                <td><b>Totals:</b></td>
                                 <td><span id="generate_total_calories">0</span></td>
                                 <td><span id="generate_total_protein">0</span></td>
                                 <td><span id="generate_total_fat">0</span></td>
@@ -65,6 +81,8 @@
                             </tr>
                         </tfoot>
                     </table>
+                </div>
+                <div id="add_generated_to_meal_action" class="card-action" style="display:none">
                     <button id="add_generated_to_meal_btn" style="display:none" class="waves-effect waves-dark btn-flat black-text left grey lighten-2 right">Add To My Meal</button>
                 </div>
             </div>
