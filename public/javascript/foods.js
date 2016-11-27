@@ -562,7 +562,7 @@ var Scotcharoo_Bar = {
 	"fiber":"2.1",
 	"protein":"6.8",
 	"carbs":"66.2",
-	"ingredients":"100% air"
+	"ingredients":"100% air",
 	"Price":"$2.00"
 }
 var Ultimate_Breakfast_Bar = {
@@ -577,7 +577,7 @@ var Ultimate_Breakfast_Bar = {
 	"fiber":"0.9",
 	"protein":"2.5",
 	"carbs":"46",
-	"ingredients":"100% air"
+	"ingredients":"100% air",
 	"Price":"$2.50"
 }
 var Coffee = {
@@ -592,7 +592,7 @@ var Coffee = {
 	"fiber":"0",
 	"protein":"0",
 	"carbs":"0",
-	"ingredients":"100% air"
+	"ingredients":"100% air",
 	"Price":"$1.50"
 }
 var Chocolate_Chip_Cookie = {
@@ -607,7 +607,7 @@ var Chocolate_Chip_Cookie = {
 	"fiber":"37.4",
 	"protein":"3.4",
 	"carbs":"37.4",
-	"ingredients":"100% air"
+	"ingredients":"100% air",
 	"Price":"$0.85"
 }
 var Strawberry_Smoothie = {
@@ -622,7 +622,7 @@ var Strawberry_Smoothie = {
 	"fiber":"7",
 	"protein":"16",
 	"carbs":"60",
-	"ingredients":"100% air"
+	"ingredients":"100% air",
 	"Price":"$1.50"
 }
 var chats = {
