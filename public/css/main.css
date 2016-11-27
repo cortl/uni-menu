@@ -54,6 +54,9 @@ input[type=text]:focus:not([readonly]) {
 input[type=text]:focus:not([readonly])+label {
 	color: white;
 }
+.chats {
+	display: inline !important;
+}
 
 
 

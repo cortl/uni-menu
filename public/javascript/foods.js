@@ -563,7 +563,7 @@ var Scotcharoo_Bar = {
 	"protein":"6.8",
 	"carbs":"66.2",
 	"ingredients":"100% air",
-	"Price":"$2.00"
+	"Price":"2.00"
 }
 var Ultimate_Breakfast_Bar = {
 	"serving":"1 bar",
@@ -578,7 +578,7 @@ var Ultimate_Breakfast_Bar = {
 	"protein":"2.5",
 	"carbs":"46",
 	"ingredients":"100% air",
-	"Price":"$2.50"
+	"Price":"2.50"
 }
 var Coffee = {
 	"serving":"1 cup",
@@ -593,7 +593,7 @@ var Coffee = {
 	"protein":"0",
 	"carbs":"0",
 	"ingredients":"100% air",
-	"Price":"$1.50"
+	"Price":"1.50"
 }
 var Chocolate_Chip_Cookie = {
 	"serving":"1 Cookie",
@@ -608,7 +608,7 @@ var Chocolate_Chip_Cookie = {
 	"protein":"3.4",
 	"carbs":"37.4",
 	"ingredients":"100% air",
-	"Price":"$0.85"
+	"Price":"0.85"
 }
 var Strawberry_Smoothie = {
 	"serving":"1 cup",
@@ -623,16 +623,14 @@ var Strawberry_Smoothie = {
 	"protein":"16",
 	"carbs":"60",
 	"ingredients":"100% air",
-	"Price":"$3.50"
+	"Price":"3.50"
 }
-var chats = {
+var foods = {
 	"Strawberry Smoothie":Strawberry_Smoothie,
 	"Chocolate Chip Cookie" :Chocolate_Chip_Cookie,
 	"Coffee" :Coffee,
 	"Ultimate Breakfast Bar" :Ultimate_Breakfast_Bar,
-	"Scotcharoo_Bar" :Scotcharoo_Bar
-}
-var foods = {
+	"Scotcharoo_Bar" :Scotcharoo_Bar,
 	"Omelet":omelet,
 	"Homestyle Belgian Waffle":homestyle_belgian_waffle,
 	"Scrambled Eggs":scrambled_eggs,
