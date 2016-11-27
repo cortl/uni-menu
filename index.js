@@ -15,7 +15,9 @@ app.get('/', function(request, response) {
 app.get('/piazza', function(request, response) {
   response.render('pages/locations/piazza.ejs');
 });
-
+app.get('/chats', function(request, response) {
+  response.render('pages/locations/chats.ejs');
+});
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

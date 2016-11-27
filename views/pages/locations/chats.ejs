@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../../partials/header.ejs %>
+</head>
+<body>
+	<% include ../../partials/uni-head.ejs %>
+	<% include ../../partials/nutrition-facts.ejs %>
+	<% include ../../partials/filter-dropdown.ejs %>
+	<div id="search-block" style="display: none">
+		<div class="row">
+			<% include ../../partials/search.ejs %>
+		</div>
+	</div>
+	<div id="nav-block" class="row">
+		<% include ../../partials/navigation.ejs %>
+	</div>
+	<div id="generate-block" class="row" style="display:none">
+		<% include ../../partials/generate.ejs %>
+	</div>
+	<div id="menu-block">
+		<div class="row">
+		<% include ../../partials/menu.ejs %>
+		<% include ../../partials/my-meal.ejs %>
+		</div>
+	</div>
+</body>
+</html>
