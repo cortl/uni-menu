@@ -549,6 +549,89 @@ var breakfast_pizza = {
 	"carbs":"2.4",
 	"ingredients":"100% air"
 }
+
+var Scotcharoo_Bar = {
+	"serving":"1 bar",
+	"calories": "407",
+	"fatcalories":"146",
+	"fat":"16.2",
+	"satfat":"6.4",
+	"transfat":"0",
+	"sodium":"223.9",
+	"sugar":"52",
+	"fiber":"2.1",
+	"protein":"6.8",
+	"carbs":"66.2",
+	"ingredients":"100% air"
+	"Price":"$2.00"
+}
+var Ultimate_Breakfast_Bar = {
+	"serving":"1 bar",
+	"calories": "286",
+	"fatcalories":"90",
+	"fat":"9.9",
+	"satfat":"1.4",
+	"transfat":"0",
+	"sodium":"118.1",
+	"sugar":"29.8",
+	"fiber":"0.9",
+	"protein":"2.5",
+	"carbs":"46",
+	"ingredients":"100% air"
+	"Price":"$2.50"
+}
+var Coffee = {
+	"serving":"1 cup",
+	"calories": "2",
+	"fatcalories":"0",
+	"fat":"0",
+	"satfat":"0",
+	"transfat":"0",
+	"sodium":"0",
+	"sugar":"0",
+	"fiber":"0",
+	"protein":"0",
+	"carbs":"0",
+	"ingredients":"100% air"
+	"Price":"$1.50"
+}
+var Chocolate_Chip_Cookie = {
+	"serving":"1 Cookie",
+	"calories": "273",
+	"fatcalories":"120",
+	"fat":"13.3",
+	"satfat":"3.6",
+	"transfat":"0.8",
+	"sodium":"264.5",
+	"sugar":"21.6",
+	"fiber":"37.4",
+	"protein":"3.4",
+	"carbs":"37.4",
+	"ingredients":"100% air"
+	"Price":"$0.85"
+}
+var Strawberry_Smoothie = {
+	"serving":"1 cup",
+	"calories": "300",
+	"fatcalories":"0",
+	"fat":"5",
+	"satfat":"1",
+	"transfat":"0",
+	"sodium":"130",
+	"sugar":"41",
+	"fiber":"7",
+	"protein":"16",
+	"carbs":"60",
+	"ingredients":"100% air"
+	"Price":"$1.50"
+}
+var chats = {
+	"Strawberry Smoothie":Strawberry_Smoothie,
+	"Chocolate Chip Cookie" :Chocolate_Chip_Cookie,
+	"Coffee" :Coffee,
+	"Ultimate Breakfast Bar" :Ultimate_Breakfast_Bar,
+	"Scotcharoo_Bar" :Scotcharoo_Bar
+}
 var foods = {
 	"Omelet":omelet,
 	"Homestyle Belgian Waffle":homestyle_belgian_waffle,
