@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 	});
 });
 function generateSearchResult(foodItem){
-	var locations = ["Pizza","Rialto"]
+	var locations = ["Piazza","Rialto"]
 	var dates = ["Mon, Nov 28","Thu, Dec 1","Fri, Dec 2"]
 	var meals = ["Breakfast","Lunch","Dinner"]
 	var tableHtml = "<tr><td><a href=\"#nutrition\" data-toggle=\"nutrition\" data-target=\"#nutrition\" class=\"food_lnk modal-trigger search\"><span class=\"food_lnk search-name\">"+foodItem+"</span></a></td><td>"+getRandomArrayElement(locations)+"</td><td>"+getRandomArrayElement(dates)+"</td><td>"+getRandomArrayElement(meals)+"</td></tr>"
