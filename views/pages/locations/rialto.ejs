@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../partials/header.ejs %>
-  	<script type="text/javascript">
-		jQuery(document).ready(function($){
-			$("#locationTxt").text("Rialto")
-		})
-	</script>
+	<% include ../../partials/header.ejs %>
 </head>
 <body>
-	<% include ../partials/uni-head.ejs %>
+	<% include ../../partials/uni-head.ejs %>
+	<% include ../../partials/nutrition-facts.ejs %>
+	<% include ../../partials/filter-dropdown.ejs %>
+	<div id="search-block" style="display: none">
+		<% include ../../partials/search.ejs %>
+	</div>
+	<div id="nav-block" class="row">
+		<% include ../../partials/navigationR.ejs %>
+	</div>
 	<div class="row">
+		<div id="generate-block" style="display:none">
+			<% include ../../partials/generate.ejs %>
+		</div>
+		<div id="menu-block">
+			<% include ../../partials/menu.ejs %>
+			<% include ../../partials/my-meal.ejs %>
+		</div>
 	</div>
 </body>
 </html>
