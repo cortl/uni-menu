@@ -2,7 +2,7 @@
   "name": "uni-menu",
   "description": "Re-make of the UNI menu to be much easier to use",
   "engines": {
-    "node": "5.9.1"
+    "node": "6.11.1"
   },
   "main": "index.js",
   "scripts": {
